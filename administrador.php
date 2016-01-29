@@ -114,6 +114,14 @@
 	</div>
 </div>		
 			
+			</br>
+			<div id="insertaranuncios">
+			<nav id="anuncio">
+				<ul>
+					<li><a href="administrador_insertar.php">INSERTAR ANUNCIO<a/></li>
+				</ul>
+			</nav>
+		</div>
 
 <br/>
 
@@ -277,12 +285,14 @@
 
      <!--Esto es lo que estoy probando para insertar un anuncio -->
 
+     <!-- Esto hay que arreglarlo
+
      <?php
       //realizamos la conexión con mysql
-      $con = mysqli_connect('localhost','root','','bd_pr04_intranet');
+      $con = mysqli_connect('localhost','root','','bd_botiga_animals');
 
       //como la sentencia SIEMPRE va a buscar todos los registros de la tabla usuario, pongo en la variable $sql esa parte de la sentencia que SI o SI, va a contener
-      $sql = "SELECT * FROM tbl_usuario ORDER BY id_usuario ASC";
+      $sql = "SELECT * FROM tbl_usuario ORDER BY us_mail ASC";
 
 
 
@@ -301,6 +311,8 @@
           
         </tr>
 
+        
+
         <?php
 
         //recorremos los resultados y los mostramos por pantalla
@@ -310,26 +322,26 @@
           
          echo "<td>";
 
-          echo "<a href='administradorver.php?id=$prod[id_usuario]'>$prod[email]</a>";
-          echo "</td><td>" . substr($prod['password'], 0, 25) . "</td><td>$prod[rol]</td><td>$prod[usuario_actiu]</td><td>";
+          echo "<a href='administradorver.php?id=$prod[us_mail]'>$prod[usu_nombre]</a>";
+          echo "</td><td>" . substr($prod['usu_password'], 0, 25) . "</td><td>$prod[usu_nivel]</td><td>$prod[usu_actiu]</td><td>";
           
           //enlace a la página que modifica el producto pasándole la id (clave primaria)
-          if($prod['usuario_actiu']==1){
+          if($prod['usu_actiu']==1){
             
-            echo  "<a href='administradormodificar.php?id=$prod[id_usuario]'><i class='fa fa-pencil fa-2x fa-pull-left fa-border' title='modificar'></i></a>";
+            echo  "<a href='administradormodificar.php?id=$prod[usu_mail]'><i class='fa fa-pencil fa-2x fa-pull-left fa-border' title='modificar'></i></a>";
           }
 
 
           //enlace a la página que elimina el producto pasándole la id (clave primaria)
           if($prod['usuario_actiu']==1){
-            echo "<a href='administradoreliminar.php?id=$prod[id_usuario]'><i class='fa fa-trash fa-2x fa-pull-left fa-border' title='borrar'></i></a>";
+            echo "<a href='administradoreliminar.php?id=$prod[us_mail]'><i class='fa fa-trash fa-2x fa-pull-left fa-border' title='borrar'></i></a>";
           }
 
           //enlace a la página que modifica el producto (poniendo el campo pro_actiu a 0 o a 1, lo activa o lo desactiva) pasándole la id (clave primaria)
-          if($prod['usuario_actiu']==1){
-            echo "<a href='administradoractivar_desactivar.proc.php?id=$prod[id_usuario]'><i class='fa fa-eye-slash fa-2x fa-pull-left fa-border' title='desactivar'></i></a>";
+          if($prod['usu_actiu']==1){
+            echo "<a href='administradoractivar_desactivar.proc.php?id=$prod[usu_mail]'><i class='fa fa-eye-slash fa-2x fa-pull-left fa-border' title='desactivar'></i></a>";
           } else {
-            echo "</td><td><a href='administradoractivar_desactivar.proc.php?id=$prod[id_usuario]'><i class='fa fa-eye fa-2x fa-pull-left fa-border' title='activar'></i></a>";
+            echo "</td><td><a href='administradoractivar_desactivar.proc.php?id=$prod[us_mail]'><i class='fa fa-eye fa-2x fa-pull-left fa-border' title='activar'></i></a>";
           }
 
           echo "</a></td></tr>";
@@ -348,7 +360,7 @@
       //cerramos la conexión con la base de datos
       mysqli_close($con);
     ?>
-  
+  -->
 
 
 

@@ -2,24 +2,17 @@
 	//iniciamos sesión - SIEMPRE TIENE QUE ESTAR EN LA PRIMERA LÍNEA
 	session_start();
 ?>
-
 <!DOCTYPE html>
-
 <html>
-	
 	<head>
 		<title>Página principal</title>
 		<meta charset="utf-8"/>
 		<title>Página de login Inicial</title>
 		<meta name="autor" content="Germán Luque Sanchez, Xavier Parrot"/>
 		<meta name="descripcion" content="Proyecto 1 Animales Perdidos"/>
-		
+		<link rel="icon" href="img/image1.png">
 		<link rel="stylesheet" href="css/estilo2.css">
-
 	</head>
-	
-	
-
 	<body>
 		
 
@@ -29,19 +22,16 @@
 		<div id="agrupar">
 		<header id="cabecera">
 			
-			
 			<!--cabecera-titulo y logos de la pagina principal-->
 			<figure>
 				<a href="index.php"><img src="img/icon1.png"/></a>
 				<a href="http://www.misterguau.com/index.php/"><img src="./img/logo.jpg" width="1061" height="177"></a>
 				<!--<figcaption>Esta es la imagen de la cabecera</figcaption-->
 				<!--<a href="index.php"><img src="img/images2.png"/></a>-->
-
 			</figure>
 
-		
 
-		<div id="salir">
+			<div id="salir">
 		
 		   <nav id="menu">
 					<ul>
@@ -51,6 +41,7 @@
 
 			</nav>
 		</div>
+
 
 
 
@@ -64,12 +55,11 @@
 				
 				if($_SESSION['nivel']==1){
 					echo "ERES ADMINISTRADOR!!";
-					header("location: administrador.php");
-
+					
 					
 					
 				} elseif ($_SESSION['nivel']==2){
-					echo "ERES USUARIO!!"; 
+					echo "ERES USUARIO!!";
 					
 					
 				} 
@@ -80,13 +70,8 @@
 			}
 			echo "</div>";
 
-		
-
 		?>
-
-
-
-
+		
 		<div id="general">
 				
 
@@ -99,16 +84,12 @@
 
 		</div>
 		
-		</header>		
-			
-
-
-
-				
+		</header>	
+		
 		<section id="seccion">
 			<article id="headerLogin">
-		
-			<!--<h4>INSERTA O ELIMINA ANUNCIOS</h4>-->
+				
+					<!--<h4>INSERTA O ELIMINA ANUNCIOS</h4>-->
 
 
 <div class="buscar">&nbsp;</div>
@@ -132,113 +113,18 @@
 		</form>
 	</div>
 </div>		
+			
+			</br>
 
-		</br>		
-				
-
-
-		<div id="insertaranuncios">
+			<div id="insertaranuncios">
 			<nav id="anuncio">
 				<ul>
-					<li><a href="usuarioinsertar.php">INSERTAR ANUNCIO<a/></li>
+					<li><a href="administrador_insertar.php">INSERTAR ANUNCIO<a/></li>
 				</ul>
 			</nav>
 		</div>
 
-
-
 <br/>
-
-
-<div class="vertical-nav-container box base-mini">
-    <div id="vertical-nav">
-
-
-	<div class="block block-poll">
-
-   <div class="main-block">
-								<div class="border-bot">
-									<div class="border-left">
-										<div class="border-right">
-											<div class="corner-left-top">
-												<div class="corner-right-top">
-													<div class="corner-left-bot">
-														<div class="corner-right-bot">
-															<div class="full-width">
-
-
-	 <div class="block-title">
-
-            <div class="sideblock-title">
-								<div class="border-left">
-									<div class="border-right">
-										<div class="border-top">
-											<div class="corner-left-top">
-
-
-
-
-
-
-
-
-
-
-												<div class="corner-right-top">            	<h2>Categorías</h2>
-
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-        
-
-        <div class="block-content">
-
-
-
-
-
-        <ul id="nav_vert">
-                                                <li><a href="http://www.lilla.com/es/tienda/mister-guau" class="potential">OFERTAS Y REGALOS</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/outlet-corner-las-mejores-ofertas.html" class="potential">OUTLET Corner</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/perros.html" class="potential">PERROS</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/gatos.html" class="potential">GATOS</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/roedores-y-mamiferos.html" class="potential">ROEDORES</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/aves.html" class="potential">AVES</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/reptiles.html" class="potential">REPTILES</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.kiwoko.com/catalogsearch/result/?q=tortugas" class="potential">TORTUGAS</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.misterguau.com/index.php/peces.html" class="potential">PECES</a>
-                            </li>                      
-            <!--li class="separator">&nbsp;</li-->
-                                                <li><a href="http://www.kiwoko.com/catalogsearch/result/?q=juguetes" class="potential">JUGUETES</a>
-                            </li>
-            <!--li class="separator">&nbsp;</li-->
-                                                
-
-		</div>
-
-		<br/>
-	
-
 
 
 	<div id="logoporcentaje"
@@ -257,10 +143,8 @@
            
 
 	</div>
-											
 
-                                          
-    <form name="pasa_select" action="usuarios2.php" method="POST">
+	  <form name="pasa_select" action="usuarios2.php" method="POST">
 				
 		<select id="tipoanimal" name="campo1">
 			<option value="tipus">Seleccione un tipo de animal</option>
@@ -279,10 +163,10 @@
 				mysqli_close($con);
 				?>
 
-		</select>
+	</select>
 
 	<select id="Racaanimal" name="campo2">
-		<option value="raca">Seleccione la raza del animal</option>
+	<option value="raca">Seleccione la raza del animal</option>
 
 	
 				<?php
@@ -295,13 +179,11 @@
 				}
 				mysqli_close($con);
 				?>
-
 	</select>
+	
 
-
-
-	<select id="municipi" name="campo3">
-			<option value="municipi">Seleccione el municipio donde se perdió su animal</option>
+		<select id="municipi" name="campo3">
+		<option value="municipi">Seleccione el municipio donde se perdió su animal</option>
 				<?php
 				/*hacemos un form y rellenamos el select o combobox*/
 				/*include conexion.php etc.... la conexion antes que nada......*/
@@ -313,14 +195,99 @@
 				mysqli_close($con);
 				?>
 
-	</select>
+		</select>
 
 
 	<input id="boton" type="submit" name="enviar" value="Ingresar">
 
 	</form>
 
+
+
+
+
+     <!--Esto es lo que estoy probando para insertar un anuncio 
+
+     < Esto hay que arreglarlo
+
+     <?php
+      //realizamos la conexión con mysql
+      $con = mysqli_connect('localhost','root','','bd_botiga_animals');
+
+      //como la sentencia SIEMPRE va a buscar todos los registros de la tabla usuario, pongo en la variable $sql esa parte de la sentencia que SI o SI, va a contener
+      $sql = "SELECT * FROM tbl_usuario ORDER BY us_mail ASC";
+
+
+
+      //mostramos la consulta para ver por pantalla si es lo que esperábamos o no
+      //echo "$sql<br/>";
+
+      //lanzamos la sentencia sql
+      $datos = mysqli_query($con, $sql);
+
+      ?>-->
+
+      <table border>
+        <tr>
+          <th>Alta Usuarios</th>
+          <th>Contraseña Usuarios</th>
+          <th>Modificacion de Usuarios</th>
+          
+        </tr>
+
         
+
+       <!-- <?php
+
+        //recorremos los resultados y los mostramos por pantalla
+        //la función substr devuelve parte de una cadena. A partir del segundo parámetro (aquí 0) devuelve tantos carácteres como el tercer parámetro (aquí 25)
+        while ($prod = mysqli_fetch_array($datos)){
+          
+          
+         echo "<td>";
+
+          echo "<a href='administradorver.php?id=$prod[us_mail]'>$prod[usu_nombre]</a>";
+          echo "</td><td>" . substr($prod['usu_password'], 0, 25) . "</td><td>$prod[usu_nivel]</td><td>$prod[usu_actiu]</td><td>";
+          
+          //enlace a la página que modifica el producto pasándole la id (clave primaria)
+          if($prod['usu_actiu']==1){
+            
+            echo  "<a href='administradormodificar.php?id=$prod[usu_mail]'><i class='fa fa-pencil fa-2x fa-pull-left fa-border' title='modificar'></i></a>";
+          }
+
+
+          //enlace a la página que elimina el producto pasándole la id (clave primaria)
+          if($prod['usuario_actiu']==1){
+            echo "<a href='administradoreliminar.php?id=$prod[us_mail]'><i class='fa fa-trash fa-2x fa-pull-left fa-border' title='borrar'></i></a>";
+          }
+
+          //enlace a la página que modifica el producto (poniendo el campo pro_actiu a 0 o a 1, lo activa o lo desactiva) pasándole la id (clave primaria)
+          if($prod['usu_actiu']==1){
+            echo "<a href='administradoractivar_desactivar.proc.php?id=$prod[usu_mail]'><i class='fa fa-eye-slash fa-2x fa-pull-left fa-border' title='desactivar'></i></a>";
+          } else {
+            echo "</td><td><a href='administradoractivar_desactivar.proc.php?id=$prod[us_mail]'><i class='fa fa-eye fa-2x fa-pull-left fa-border' title='activar'></i></a>";
+          }
+
+          echo "</a></td></tr>";
+        }
+
+        ?>-->
+
+      </table>
+
+      <a href="administradorinsertar.php"><i class='fa fa-plus-square fa-2x fa-pull-left fa-border'></i></a>
+
+        
+
+
+        <?php
+
+
+      //cerramos la conexión con la base de datos
+      mysqli_close($con);
+    ?>
+  -->
+
 
 
 
@@ -415,3 +382,12 @@ pageTracker._trackPageview();
 	</body>
 </html>
 
+
+
+
+
+
+
+		
+				
+			
